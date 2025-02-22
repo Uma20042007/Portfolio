@@ -166,7 +166,7 @@ html{
 }
 .box:hover{
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 1px 2px 10px #0000004f;
+    box-shadow: 6px 6px 5px rgb(184, 184, 184);
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
@@ -235,3 +235,35 @@ html{
     font-weight: 300;
     font-size: 18px;
 }
+.expbox{
+    width: 480px;
+    border: 2px solid rgba(93, 26, 170, 0.80) ;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    line-height: 20px;
+}
+.expbox:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 6px 6px 5px rgb(184, 184, 184);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.container2{
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.Role{
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 600;
+}
+.description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
