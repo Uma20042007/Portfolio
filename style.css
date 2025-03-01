@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -60,8 +59,8 @@ html{
     height: 100vh;
 }
 .photo img{
-    height: 300px;
-    width: 300px;
+    height: 410px;
+    width: 400px;
     border-radius: 50%;
     border: 2px solid rgb(85, 26, 154);
 }
@@ -267,3 +266,97 @@ html{
     font-weight: 400;
 }
 
+/* *********************************************project section********************************************************************** */
+.projectsession{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: larger;
+    padding-top: 70px;
+}
+.projectsession h2{
+    margin-bottom: 10px;
+}
+.projectsession p{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.probox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(93, 26, 170, 0.80) ;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    line-height: 20px;
+}
+.probox:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 6px 6px 5px rgb(184, 184, 184);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.container3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.combo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;  
+}
+.protitle{
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 600;
+}
+.visrep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visrep img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
+.des{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 10px;
+    -webkit-line-clamp: 3;
+    
+}
+.view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid rgba(93, 26, 170, 0.80) ;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-image: linear-gradient(to right,rgb(85, 26, 154),rgb(151, 73, 225));
+    color: white;
+
+}
+.view:hover{
+    box-shadow: 1px 2px 10px #0000004f;
+}
