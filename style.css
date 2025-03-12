@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    height: 3000px;
+    height: 4000px;
     background-color: rgb(247, 238, 245);
 }
 html{
@@ -50,7 +50,7 @@ html{
     width: 25px;
     display: none;
 }
-/* profile style************************************************************************8 */
+/********************************************************* profile style************************************************************************8 */
 .profilsession{
     display: flex;
     justify-content: space-between;
@@ -59,10 +59,11 @@ html{
     height: 100vh;
 }
 .photo img{
-    height: 410px;
-    width: 400px;
+    width:350px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 2px solid rgb(85, 26, 154);
+    border: 1.5px solid rgb(85, 26, 154);
+    object-fit: cover;
 }
 
 .profile{
@@ -158,7 +159,8 @@ html{
 
 .box{
     width: 480px;
-    border: 2px solid rgba(93, 26, 170, 0.80) ;
+    border: 0.5px solid rgba(93, 26, 170, 0.80) ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: white;
     padding: 0 20px 20px 20px;
@@ -183,7 +185,7 @@ html{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 1.5px solid rgba(93, 26, 170, 0.80) ;
+    border: 1px solid rgba(93, 26, 170, 0.80) ;
     border-radius: 10px;
     padding: 8px 16px;
     
@@ -224,6 +226,17 @@ html{
     font-size: larger;
     padding-top: 70px;
 }
+.withlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
 
 .experiencesession h2{
     margin-bottom: 10px;
@@ -236,10 +249,11 @@ html{
 }
 .expbox{
     width: 480px;
-    border: 2px solid rgba(93, 26, 170, 0.80) ;
+    border: 0.5px solid rgba(93, 26, 170, 0.80) ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: white;
-    padding: 0 20px 20px 20px;
+    padding: 5px 10px 10px 10px;
     line-height: 20px;
 }
 .expbox:hover{
@@ -262,8 +276,11 @@ html{
     font-weight: 600;
 }
 .description{
-    font-size: 18px;
-    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    line-height: 25px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 200;
 }
 
 /* *********************************************project section********************************************************************** */
@@ -290,7 +307,7 @@ html{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgba(93, 26, 170, 0.80) ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: white;
     padding: 0 20px 20px 20px;
@@ -334,6 +351,7 @@ html{
     height: 200px;
     width: 300px;
     border-radius: 10px;
+    border: 0.5px solid rgba(93, 26, 170, 0.80);
 }
 .des{
     font-size: 12px;
@@ -359,4 +377,277 @@ html{
 }
 .view:hover{
     box-shadow: 1px 2px 10px #0000004f;
+}
+
+/* *********************************************education section********************************************************************** */
+.educationsession{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: larger;
+    padding-top: 70px;
+}
+.educationsession h2{
+    margin-bottom: 10px;
+}
+.educationsession p{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.edubox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    line-height: 20px;
+   
+    height: 100px;
+}
+.edubox:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 6px 6px 5px rgb(184, 184, 184);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.container4{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: start;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.contentss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+}
+.edutitle{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(63, 62, 62);
+    font-weight: 600;
+}
+.edutitle p{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 5px;
+    -webkit-line-clamp: 3;
+}
+.edutitle  h3{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.edu{
+    border: 0.2px solid rgba(93, 26, 170, 0.80);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.edu img{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    
+}
+.edudescription{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    line-height: 25px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* *********************************************footer section********************************************************************** */
+.footer{
+
+    background-color: rgb(247, 238, 245);
+    height: 150vh;
+}
+
+.ulogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.ulogo img{
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+}
+.footer h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap:20px;
+    margin-top: 20px;
+
+    
+}
+.social a{
+    text-decoration: none;
+    color: rgb(85, 26, 154);
+}
+
+.social a:hover{
+    box-shadow: 1px 2px 10px #0000004f;
+}
+
+/* Contact Box Styling */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contact-box {
+    background: #fff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Input Field Styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Button Styling */
+.tab {
+    width: 100%;
+    padding: 12px;
+    background: rgb(85, 26, 154);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background: rgb(151, 73, 225);
+    box-shadow: 1px 2px 10px #0000004f;
+}
+.Getintouch{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 800;
+font-size: larger;
+padding-top: 70px;
+}
+.Getintouch h2{
+margin-bottom: 10px;
+}
+.Getintouch p{
+margin-bottom: 10px;
+font-weight: 300;
+font-size: 18px;
+}
+/* ********************************************************end******************************************************* */
+.container5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.finalsession{
+    background-color: white;
+    height: 50vh;
+}
+.container5 .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+}
+.social a{
+    text-decoration: none;
+    color: rgb(85, 26, 154);
+}
+.social a:hover{
+    box-shadow: 1px 2px 10px #0000004f;
+}
+.container5 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 15px;  
+
 }
