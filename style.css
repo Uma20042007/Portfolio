@@ -651,3 +651,62 @@ font-size: 18px;
     padding-top: 15px;  
 
 }
+/* *******************************************************media query******************************************************* */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        width: 100%;
+    }
+    .navbar .links{
+        display: none;
+    }
+
+    .profilsession{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: max-content;
+        padding: 5rem 1rem;
+    }
+    .iconholder{
+        flex-direction: row;
+        order: 3;
+        justify-content: start;
+    }
+    .profile{
+        order: 2;
+    }
+    .photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+
+    /* Skills */
+    .skillsession .container{
+        grid-template-columns: 1fr;
+    }
+    
+
+    /* projects */
+    .container3{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .probox{
+        width: 480px;
+    }
+    .visrep {
+        width: 420px;
+    }
+    .visrep img {
+        width: 100%;
+    }
+    .des{
+        padding-left: 10px;
+    }
+
+}
