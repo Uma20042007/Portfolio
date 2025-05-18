@@ -11,46 +11,79 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.navbar{
+/* Navbar Styles */
+/* General Navbar Styles */
+/* General Navbar Styles */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
     background-color: white;
     position: fixed;
-    left:0;
-    right:0;   
+    left: 0;
+    right: 0;
     z-index: 100;
-}
-.links{
+  }
+  
+  /* Links Styling */
+  .links {
     display: flex;
     gap: 20px;
-}
-.links a{
+  }
+  .links a {
     text-decoration: none;
     color: rgb(85, 26, 154);
-    
-}
-
-.links a:hover{
+  }
+  .links a:hover {
     text-shadow: 1px 1px 10px #aa0cff38;
-    
-}
-.button{
+  }
+  
+  /* Button Styling */
+  .button {
     text-decoration: none;
     padding: 5px 15px;
     border: 1px solid blueviolet;
     border-radius: 20px;
-}
-
-.button:hover{
+  }
+  .button:hover {
     box-shadow: 1px 2px 10px #0000004f;
-}
-.menubar{
-    height:25px;
+  }
+  
+  /* Menu Icon Styling */
+  .menubar {
+    height: 25px;
     width: 25px;
     display: none;
-}
+    cursor: pointer;
+  }
+  
+  /* Responsive Design - Mobile */
+  @media screen and (max-width: 568px) {
+    .links {
+      display: none; /* Hide links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      z-index: 200;
+    }
+  
+    .links.show {
+      display: flex; /* Show links when menu is clicked */
+    }
+  
+    .menubar {
+      display: block; /* Show menu icon on mobile */
+    }
+  }
+  
+  
+  
 /********************************************************* profile style************************************************************************8 */
 .profilsession{
     display: flex;
@@ -358,7 +391,6 @@ html{
     font-size: 12px;
     font-weight: 300;
     padding-top: 10px;
-    -webkit-line-clamp: 3;
     
 }
 .view{
@@ -446,7 +478,6 @@ html{
     font-size: 12px;
     font-weight: 300;
     padding-top: 5px;
-    -webkit-line-clamp: 3;
 }
 .edutitle h3{
     font-size: 15px;
@@ -704,8 +735,15 @@ font-size: 18px;
     .des{
         padding-left: 10px;
     }
+    
+    
+      /* Show links when active */
+      .links.active {
+        display: flex;
+      }
+      
+    }
 
-}
 @media (max-width: 576px) {
     /* Navbar */
     .navbar {

@@ -17,25 +17,42 @@
 
 <body>
     <!-- navbar -->
-    <div class="navbar">
-        <div>
-            <div class="logo">
-                <h1>My Ark</h1>
-            </div>
-        </div>
-        <div class="links">
-            <a class="about" href="#about">about</a>
-            <a class="skills" href="#skills">Skills</a>
-            <a class="experience" href="#experience">Experience</a>
-            <a class="projects" href="#projects">Projects</a>
-            <a class="education" href="#Education">Education</a>
-
-        </div>
-        <div>
-            <a class="button" href="https://github.com/Uma20042007">Github</a>
-            <img class="menubar" src="./icons8-menu.svg" alt="menu">
-        </div>
+   <!-- Navbar -->
+<div class="navbar">
+    <div>
+      <div class="logo">
+        <h1>My Ark</h1>
+      </div>
     </div>
+    
+    <!-- Links Section -->
+    <div class="links" id="menuLinks">
+      <a class="about" href="#about">About</a>
+      <a class="skills" href="#skills">Skills</a>
+      <a class="experience" href="#experience">Experience</a>
+      <a class="projects" href="#projects">Projects</a>
+      <a class="education" href="#education">Education</a>
+    </div>
+  
+    <!-- Menu Icon and Github Link -->
+    <div>
+      <a class="button" href="https://github.com/Uma20042007">Github</a>
+      <img class="menubar" src="./icons8-menu.svg" alt="menu" id="menuIcon">
+    </div>
+  </div>
+  
+<script>
+        // Select elements
+const menuIcon = document.getElementById('menuIcon');
+const menuLinks = document.getElementById('menuLinks');
+
+// Toggle visibility on menu icon click
+menuIcon.addEventListener('click', function () {
+  menuLinks.classList.toggle('show');
+});
+
+
+</script>
     <!-- home section -->
     <div id="about" class="profilsession">
         <div class="iconholder">
@@ -55,7 +72,7 @@
                 self-improvement, with a passion for innovation and problem-solving. Actively seeks challenges that
                 enhance both technical expertise and leadership capabilities.
             </p> 
-                <a class="cv" href="https://drive.google.com/file/d/1J7CApNgDG9ooTqly6NPg2xT14UgzWSwd/view?usp=drivesdk">Check My CV</a>
+                <a class="cv" href="https://drive.google.com/file/d/15IvbHceK1FwBApCctfgC2tYqPzsgnFFY/view?usp=drivesdk">Check My CV</a>
         </div>
 
         <div class="photo">
